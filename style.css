@@ -746,9 +746,10 @@ CONTACT
 /*=========================
 Footer
 =========================*/
-.footer{
+.footer {
     padding: 20px;
 }
+
 .footer hr {
     margin: 45px 0 25px;
     border: none;
@@ -818,6 +819,18 @@ Footer
 
     .testimonial-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar__ul{
+        gap: 20px;
+    }
+
+    .blog__card{
+        flex-grow: 0;
+        flex-basis: 46.5%;
+    }
+    .blog__container{
+        flex-wrap: wrap;
     }
 
 }
@@ -924,7 +937,7 @@ Footer
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
+
     .footer-bottom {
         flex-direction: column;
         text-align: center;
