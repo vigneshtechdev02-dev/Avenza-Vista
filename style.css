@@ -560,7 +560,6 @@ a {
     align-items: center;
     gap: 40px;
     position: relative;
-    z-index: 2;
 }
 
 .newsletter-text h2 {
@@ -805,6 +804,10 @@ Footer
 
 
 @media screen and (max-width:1200px) {
+    .navbar{
+        flex-grow: 1;
+        width: 100%;
+    }
     .des__card {
         flex-basis: 30%;
     }
@@ -832,6 +835,7 @@ Footer
     .blog__container{
         flex-wrap: wrap;
     }
+
 
 }
 
