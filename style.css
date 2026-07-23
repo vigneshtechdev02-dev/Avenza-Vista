@@ -117,6 +117,7 @@ a {
 .booking {
     position: relative;
     bottom: 70px;
+
 }
 
 .booking__table {
@@ -126,8 +127,9 @@ a {
     background-color: white;
     padding: 30px;
     border-radius: 20px;
-    width: 1000px;
+    flex-basis: 50%;
     margin-left: 250px;
+    margin-right: 230px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -797,17 +799,41 @@ Footer
 =============================*/
 
 @media screen and (max-width:1500px) {
-    .booking {
-        display: none;
-    }
+    /* NO One Changes */
 }
 
 
 @media screen and (max-width:1200px) {
-    .navbar{
+    .navbar {
         flex-grow: 1;
         width: 100%;
     }
+
+    .booking {
+        font-size: 12px;
+        display: flex;
+        right: 13%;
+        bottom: 50px;
+        width: 150%;
+    }
+
+    .booking__table {
+        padding: 10px;
+        gap: 0px;
+        width: fit-content;
+        justify-content: space-around;
+    }
+
+    .booking-s1 {
+        gap: 10px;
+        display: flex;
+    }
+
+    .booking__button {
+        padding: 10%;
+        font-size: 120%;
+    }
+
     .des__card {
         flex-basis: 30%;
     }
@@ -824,18 +850,25 @@ Footer
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .navbar__ul{
+    .navbar__ul {
         gap: 20px;
     }
 
-    .blog__card{
+    .blog__card {
         flex-grow: 0;
         flex-basis: 46.5%;
     }
-    .blog__container{
+
+    .blog__container {
         flex-wrap: wrap;
     }
 
+}
+
+@media screen and (max-width:900px) {
+    .booking {
+        display: none;
+    }
 
 }
 
